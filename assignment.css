@@ -13,22 +13,23 @@
     width: 130vw;
     height: 50px;
     color: #fff;
-    z-index: 2;
+    z-index: 1;
 }
 
 .navbar {
     display: flex;
+    height: 4vh;
 }
 
 .navleft {
     position: relative;
-    height: 100%;
-    width: auto;
+    height: 2vh;
+    margin-top: 1vh;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     background-color: transparent;
-    z-index: 1;
+    z-index: 2;
     cursor: pointer;
 }
 .word {
@@ -56,7 +57,8 @@
     text-align: center;
     margin: auto;
     align-items: center;
-    
+    margin-top: 1vh;
+    z-index: 2;
 }
 
 .word2 {
@@ -75,4 +77,54 @@
     -webkit-transition: all .1s;
     transition: all .1s;
     cursor: default;
+}
+
+.cover {
+    background-image: url(res/index/bg.png);
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100vh;
+    min-width: 1000px;
+    zoom: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 0;
+    z-index: 0;
+}
+
+.container {
+    justify-content: center;
+    text-align: center;
+
+}
+
+.word3 {
+    
+}
+
+.littletitle {
+    width: 180px;
+    height: auto;
+    margin-top: 8px;
+}
+
+.info .littlecontent1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px calc(50% - 640px);
+    box-sizing: border-box;
+}
+
+.littleblock1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: baseline;
 }
