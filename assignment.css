@@ -297,3 +297,42 @@
     color: #273742;
     line-height: 2;
 }
+
+.bubbleblock {
+    position: relative;
+    widows: 50%;
+    height: 200px;
+    max-width: 300px;
+}
+
+.bubble {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    border-radius: 50%;
+    user-select: none;
+}
+
+.imageblock {
+    margin: 35px 0;
+    width: 100%;
+    height: 700px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,.1);
+    overflow: hidden;
+}
+
+.flapimage {
+    position: relative;
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
