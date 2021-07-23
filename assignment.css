@@ -98,6 +98,7 @@
     background-size: cover;
     background-position: center 0;
     z-index: 0;
+    box-shadow: 0 3px 8px rgb(0 0 0 / 10%);
 }
 
 .container {
@@ -163,7 +164,7 @@
 
 
 .titleblock {
-    width: 180px;
+    width: 100%;
     height: auto;
     margin-top: 8px;
     margin: 35px 0;
@@ -257,4 +258,42 @@
     color: rgba(83,133,180,.849);
     line-height: 2;
     cursor: pointer;
+}
+
+.setright {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.littleblock2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 50%;
+}
+
+.blockcon2 {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image2 {
+    width: 45px;
+    height: auto;
+}
+
+.paracont {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.paracont p {
+    margin-left: 55px;
+    font-size: 16px;
+    color: #273742;
+    line-height: 2;
 }
