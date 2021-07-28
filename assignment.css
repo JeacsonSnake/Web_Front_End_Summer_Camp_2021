@@ -125,10 +125,13 @@
     overflow: hidden;
     font-size: 18px;
     font-weight: 600;
-    color: #323130;
     opacity: .8;
     user-select: none;
     cursor: pointer;
+}
+.word2 a {
+    text-decoration: none;
+    color: #323130;
 }
 
 .cover {
