@@ -211,7 +211,7 @@
     border: #1a3249 ;
 }
 
-.innerbotton2 span {
+.innerbotton2 .bottonset2 span {
     font-weight: 600;
     color: #ffffff;
     font-size: 18px;
@@ -420,11 +420,82 @@
 .flapimage {
     position: relative;
     width: 100%;
-    height: auto;
-
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.flapimage img {
+    width: 100%;
+    height: 100%;
+}
+
+.seleft,
+.seright {
+    display: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    padding-top: 6px;
+    width: 20px;
+    height: 30px;
+    background-color: rgba(0,0,0,.5);
+    text-decoration: none;
+    color: rgba(255,255,255,.8);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.seleft {
+    left: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.seright {
+    right: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.flapimage:hover .seleft {
+    display: block;
+}
+
+.flapimage:hover .seright {
+    display: block;
+}
+
+.senav {
+    position: absolute;
+    display: flex;
+    bottom: 15px;
+    left: 50%;
+    width: 8%;
+    height: 2%;
+    margin-left: -4%;
+    background-color: rgba(255,255,255,.3);
+    border-radius: 7px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.senav li {
+    float: left;
+    list-style: none;
+    width: 13%;
+    height: 90%;
+    margin-left: 6%;
+    margin-right: 6%;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.senav .selected {
+    background-color: rgba(0,0,0,.5);
 }
 
 .footinfo1 {
